@@ -1,0 +1,47 @@
+{
+  "journal_groups": {
+    "major_medical": [
+      "Lancet",
+      "The New England journal of medicine",
+      "JAMA",
+      "BMJ"
+    ],
+    "specialty_medical": [
+      "Nature Medicine",
+      "JAMA Internal Medicine",
+      "Annals of Internal Medicine",
+      "Journal of Clinical Oncology"
+    ],
+    "precision_medicine": [
+      "NPJ Precision Oncology",
+      "Journal of Personalized Medicine",
+      "Personalized Medicine",
+      "The Pharmacogenomics Journal",
+      "OMICS: A Journal of Integrative Biology"
+    ],
+    "digital_health": [
+      "npj Digital Medicine",
+      "Journal of Medical Internet Research",
+      "Journal of Biomedical Informatics"
+    ],
+    "all_journals": [
+      "Lancet",
+      "The New England journal of medicine",
+      "JAMA",
+      "BMJ",
+      "Nature Medicine",
+      "JAMA Internal Medicine",
+      "Annals of Internal Medicine",
+      "Journal of Clinical Oncology",
+      "NPJ Precision Oncology",
+      "Journal of Personalized Medicine",
+      "Personalized Medicine",
+      "The Pharmacogenomics Journal",
+      "OMICS: A Journal of Integrative Biology",
+      "npj Digital Medicine",
+      "Journal of Medical Internet Research",
+      "Journal of Biomedical Informatics"
+    ]
+  },
+  "default_group": "major_medical"
+}

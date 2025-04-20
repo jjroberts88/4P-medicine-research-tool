@@ -1,0 +1,34 @@
+# API keys and sensitive information
+api_keys.json
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# JSON output files (optional, uncomment if you don't want to track results)
+# *_papers_*.json
+# 4p_analysis_*.json

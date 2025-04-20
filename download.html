@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Medical Papers JSON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .download-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .download-button:hover {
+            background-color: #45a049;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Download Medical Papers JSON</h1>
+    
+    <p>Click the button below to download the JSON file containing medical papers from major medical journals:</p>
+    
+    <a href="medical_papers_major_medical_20250420.json" download class="download-button">Download JSON File</a>
+    
+    <h2>File Information</h2>
+    <ul>
+        <li><strong>Filename:</strong> medical_papers_major_medical_20250420.json</li>
+        <li><strong>Journals:</strong> Lancet, The New England Journal of Medicine, JAMA, BMJ</li>
+        <li><strong>Time Period:</strong> Last 30 days</li>
+        <li><strong>Paper Count:</strong> 181 papers (100 with abstracts)</li>
+    </ul>
+    
+    <h2>How to Use This File</h2>
+    <p>This JSON file can be loaded into any programming language that supports JSON. Here are examples in a few common languages:</p>
+    
+    <h3>Python</h3>
+    <pre>
+import json
+
+# Load the JSON file
+with open('medical_papers_major_medical_20250420.json', 'r', encoding='utf-8') as f:
+    papers = json.load(f)
+
+# Print the number of papers
+print(f"Loaded {len(papers)} papers")
+
+# Access the first paper
+if papers:
+    first_paper = papers[0]
+    print(f"First paper title: {first_paper['title']}")
+    print(f"Journal: {first_paper['journal']}")
+    print(f"URL: {first_paper['url']}")
+    </pre>
+    
+    <h3>JavaScript</h3>
+    <pre>
+// Load the JSON file (in a browser)
+fetch('medical_papers_major_medical_20250420.json')
+  .then(response => response.json())
+  .then(papers => {
+    console.log(`Loaded ${papers.length} papers`);
+    
+    // Access the first paper
+    if (papers.length > 0) {
+      const firstPaper = papers[0];
+      console.log(`First paper title: ${firstPaper.title}`);
+      console.log(`Journal: ${firstPaper.journal}`);
+      console.log(`URL: ${firstPaper.url}`);
+    }
+  });
+    </pre>
+    
+    <h3>R</h3>
+    <pre>
+# Load the jsonlite package
+library(jsonlite)
+
+# Read the JSON file
+papers <- fromJSON("medical_papers_major_medical_20250420.json")
+
+# Print the number of papers
+cat("Loaded", nrow(papers), "papers\n")
+
+# Access the first paper
+if (nrow(papers) > 0) {
+  cat("First paper title:", papers$title[1], "\n")
+  cat("Journal:", papers$journal[1], "\n")
+  cat("URL:", papers$url[1], "\n")
+}
+    </pre>
+</body>
+</html>
